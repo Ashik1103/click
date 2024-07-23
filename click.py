@@ -15,7 +15,7 @@ print("started the clicker")
 while True:
     pg.click(mousePos.x, mousePos.y)
     print("clicked")
-    time.sleep(5)
+    # time.sleep(5)
 
     if keyboard.is_pressed("q"):
         break
