@@ -20,10 +20,20 @@ import time
 
 #     if keyboard.is_pressed("q"):
 #         break
-print(pg.position())  # Prints current mouse position
-pg.moveTo(100, 100)
-print("sleep")
-time.sleep(3)
-print(pg.position())  # Prints current mouse position
 
-pg.click()
+
+# print(pg.position())  # Prints current mouse position
+# pg.moveTo(100, 100)
+# print("sleep")
+# time.sleep(3)
+# print(pg.position())  # Prints current mouse position
+
+# pg.click()
+from pynput.mouse import Button, Controller
+
+mouse = Controller()
+
+# Move the mouse to (100, 100)
+mouse.position = (100, 100)
+# Click at (100, 100)
+mouse.click(Button.left, 1)
