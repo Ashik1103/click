@@ -22,8 +22,8 @@ import time
 #         break
 print(pg.position())  # Prints current mouse position
 pg.moveTo(100, 100)
-time.sleep(1)
 print("sleep")
+time.sleep(3)
 print(pg.position())  # Prints current mouse position
 
 pg.click()
