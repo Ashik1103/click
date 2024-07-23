@@ -13,6 +13,7 @@ time.sleep(5)
 print("started the clicker")
 
 while True:
+    print(mousePos.x, mousePos.y)
     pg.click(mousePos.x, mousePos.y)
     print("clicked")
     # time.sleep(5)
